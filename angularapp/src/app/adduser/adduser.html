@@ -1,0 +1,16 @@
+<input type="text" #name placeholder="Enter Name">
+<br>
+
+<input type="text" #email placeholder="Enter Email">
+<br>
+
+<button (click)="addUser(name.value,email.value)">
+    Add User
+</button>
+
+<div *ngIf="user">
+    <h2>User Added Successfully</h2>
+    <h2>ID: {{user.id}}</h2>
+    <h2>Name: {{user.name}}</h2>
+    <h2>Email: {{user.email}}</h2>
+</div>

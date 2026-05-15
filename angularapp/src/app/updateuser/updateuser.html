@@ -1,0 +1,14 @@
+<input type="text" #userId placeholder="Enter User ID">
+<br>
+<input type="text" #name placeholder="Enter Name">
+<br>
+<input type="text" #email placeholder="Enter Email">
+
+<br>
+<button (click)="updateUser(userId.value,name.value,email.value)">Get User</button>
+
+<div *ngIf="user">
+    <h2>User {{user.id}} Updated with values</h2>
+    <h2>Name: {{user.name}}</h2>
+    <h2>Email: {{user.email}}</h2>
+</div>

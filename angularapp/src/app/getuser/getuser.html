@@ -1,0 +1,8 @@
+<input type="text" #userId placeholder="Enter User ID">
+<br>
+<button (click)="fetchUser(userId.value)">Get User</button>
+
+<div *ngIf="user">
+    <h2>Name: {{user.name}}</h2>
+    <h2>Email: {{user.email}}</h2>
+</div>

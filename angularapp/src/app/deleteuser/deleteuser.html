@@ -1,0 +1,10 @@
+<input type="text" #userId placeholder="Enter User ID">
+<br>
+
+<button (click)="deleteUser(userId.value)">
+    Delete User
+</button>
+
+<div *ngIf="message">
+    <h2>{{message}}</h2>
+</div>
